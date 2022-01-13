@@ -1,0 +1,69 @@
+
+
+html{
+   background-color: rgb(255, 255, 255); 
+   font-family:  'Arial Narrow', Arial, sans-serif;
+   overflow: scroll;
+   overflow-x: hidden;
+   
+}
+
+
+#name{
+    text-decoration: underline;
+    font-style: oblique;
+    font-size: 12pt;
+    margin: 10px;
+    top: 50%;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+   
+}
+
+#navBar{
+    background-color: rgba(201, 195, 198, 0.315);
+    font-style: oblique;
+    font-size: 11pt;
+    margin-top: 50px;
+    width: 102%;
+    top: 50%;
+    position: fixed;
+    text-align: center;
+   
+    
+}
+
+img{
+    height: 100%;
+    position: fixed;
+}
+
+.parallax{
+    background-attachment: fixed;
+    
+    display: block;
+    background-position: center;
+    background-size: cover;
+    padding-top: 80%;
+}
+
+::-webkit-scrollbar {
+    width: 0;  
+    background: transparent; 
+
+}
+
+.first{
+    background-image: url("1.jpg");
+}
+.sec{
+    background-image: url("2.jpg");
+}
+.third{
+    background-image: url("3.jpg");
+}
+.fourth{
+    background-image: url("4.jpg");
+}
+
