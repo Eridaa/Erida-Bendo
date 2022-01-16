@@ -3,10 +3,11 @@
 html{
    background-color: rgb(255, 255, 255); 
    font-family:  'Arial Narrow', Arial, sans-serif;
-   overflow: scroll;
-   overflow-x: hidden;
-   
+  /* overflow: scroll;
+   overflow-x: hidden;  */
 }
+
+
 
 
 #name{
@@ -14,25 +15,80 @@ html{
     font-style: oblique;
     font-size: 12pt;
     margin: 10px;
+    box-sizing: border-box;
     top: 50%;
     width: 100%;
     position: fixed;
     text-align: center;
-   
 }
+
+
 
 #navBar{
     background-color: rgba(201, 195, 198, 0.315);
     font-style: oblique;
     font-size: 11pt;
+
     margin-top: 50px;
     width: 102%;
     top: 50%;
     position: fixed;
     text-align: center;
-   
-    
 }
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+#name:hover{
+    font-style: normal;
+}
+
+#titles:hover{
+    font-style: normal;
+}
+
+
+
+
+.hovertext {
+    position: relative;
+    /*border-bottom: 1px dotted black;*/
+  }
+  
+  .hovertext:before {
+    content: attr(data-hover);
+    visibility: hidden;
+    opacity: 0;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.295);
+    color: rgb(0, 0, 0);
+    text-align: justify;
+    border-radius: 5px;
+    padding: 10px ;
+    transition: opacity 1s ease-in-out;
+  
+    position: absolute;
+
+
+    z-index: 1;
+    left: 40%;
+    top: 800%;
+
+    
+  }
+  
+  .hovertext:hover:before {
+    opacity: 1;
+    visibility: visible;
+  }
+
+
+
+
+
+
 
 img{
     height: 100%;
@@ -41,17 +97,9 @@ img{
 
 .parallax{
     background-attachment: fixed;
-    
-    display: block;
     background-position: center;
     background-size: cover;
     padding-top: 80%;
-}
-
-::-webkit-scrollbar {
-    width: 0;  
-    background: transparent; 
-
 }
 
 .first{
@@ -67,3 +115,7 @@ img{
     background-image: url("4.jpg");
 }
 
+::-webkit-scrollbar {
+    width: 0;  
+    background: transparent; 
+}
